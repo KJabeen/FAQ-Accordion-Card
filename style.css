@@ -1,0 +1,264 @@
+
+
+:root{
+    
+    /* Colors */
+
+    /* Primary */
+
+    /* Text */
+
+    --Verydarkdesaturatedblue: hsl(238, 29%, 16%);
+    --Softred: hsl(14, 88%, 65%);
+
+    /* Gradient */
+
+    /* Background gradient: */
+
+    --Softviolet: hsl(273, 75%, 66%);
+    --Softblue: hsl(240, 73%, 65%);
+
+    /* Neutral */
+
+    /* Text */
+
+    --Verydarkgrayishblue: hsl(237, 12%, 33%);
+    --Darkgrayishblue: hsl(240, 6%, 50%);
+
+    /* Dividers */
+
+    --Lightgrayishblue: hsl(240, 5%, 91%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+body{
+    
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  
+    display: flex;
+    justify-content: center;
+    place-items: center;
+
+    font-size: 0.8rem;
+    font-family: 'Kumbh Sans', sans-serif;
+    
+}
+.container{
+    
+    width: 65%;
+}
+.wrapper{
+    
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+   
+    background-color: white;
+    
+    border-radius: 35px;
+   
+    position: relative;
+}
+
+.image{
+    
+    width: 75%;
+    overflow: hidden;
+    background: url(bg-pattern-desktop.svg);
+    background-position: relative;
+    background-repeat: no-repeat;
+    background-position:  109% 75%;
+    
+}
+.image1{
+    /* position:absolute;
+    transform: translate(-35%,175%); */
+    position: absolute;
+    top: 197px;
+    left:-93px;
+    height: 50px;
+    width: 50px;
+
+    
+}
+.image2{
+    width: 100%;
+    position: relative;
+    transform: translateX(-27%);
+    margin: 2rem;
+    padding: 2rem 2rem 2rem 0 ;
+}
+.image3{
+    display: none;
+}  
+
+
+.faq_wrapper{
+    
+    width: 65%;
+    margin: 2rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    text-decoration: none;
+}
+.faq_title{
+    
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.faq_question{
+    
+    
+    display: flex;
+    flex-direction: column;
+    
+    color: var(--Darkgrayishblue);
+    opacity: 1;
+    font-size: 0.8rem;
+    font-weight:lighter;
+    margin: 1.3rem 0;
+
+}
+.question:hover{
+    color: red;
+    opacity: 0.6;
+}
+
+.faq_question_answer{
+    
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--Lightgrayishblue);
+}
+.question{
+    
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.question img{
+    align-self: center;
+}
+
+.answer{
+   display: none;
+   padding: 0.3rem 0 0 0;
+   color: var(--Darkgrayishblue);
+   
+}
+
+
+@media only screen and (max-width: 425px){
+
+    body{
+        height: fit-content;
+        display: grid;
+        place-items: center;
+    }
+
+    .container{
+    
+        width: 90%;
+        margin: 8rem 1rem 4rem 1rem;
+        height: 100vh;
+        
+    }
+    .wrapper{
+        
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+       
+        background-color: white;
+        border-radius: 35px;
+        position: relative;
+    }
+    .image{
+        width: 100%;
+        
+        overflow:visible;
+        background: url(bg-pattern-mobile.svg);
+        background-position: relative;
+        background-repeat: no-repeat;
+        background-position:  42% -5%;
+           
+        
+    }
+    .image1{
+        display: none;
+    }
+    .image2{
+        display: none;
+    }
+    .image3{
+        width: 70%;
+        display:block;
+        position: relative;
+        top: -90px;
+        left: 42px;
+        
+    }
+    
+.faq_wrapper{
+    
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+   
+    text-decoration: none;
+    margin: auto;
+}
+.faq_title{
+    
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.faq_question{
+    
+    display: flex;
+    flex-direction: column;
+    
+    color: var(--Darkgrayishblue);
+    
+    font-size: 0.75rem;
+    font-weight:lighter;
+    
+    /* margin: 1rem 0; */
+
+}
+.faq_question_answer{
+    
+}
+.question{
+    gap: 0.1rem;
+}
+.question:hover{
+    color: red;
+    opacity: 0.6;
+}
+.answer{
+    display: none;
+    padding: 0.1rem;
+    color: var(--Darkgrayishblue);
+    /* width: 80%; */
+    font-size: 0.8rem;
+    
+    
+ }
+ 
+
+}
