@@ -1,5 +1,4 @@
 # FAQ-Accordion-Card
-# Frontend Mentor - FAQ accordion card solution
 
 This is a solution to the [FAQ accordion card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam). Frontend Mentor challenges helps improve my coding skills by building realistic projects. 
 
@@ -34,8 +33,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here]([https://your-solution-url.com](https://github.com/KJabeen/FAQ-Accordion-Card))
-- Live Site URL: [Add live site URL here]([https://your-live-site-url.com](https://kjabeen.github.io/FAQ-Accordion-Card/))
+
+- Solution URL: ([https://your-solution-url.com](https://github.com/KJabeen/FAQ-Accordion-Card))
+- Live Site URL: ([https://your-live-site-url.com](https://kjabeen.github.io/FAQ-Accordion-Card/))
 
 ## My process
 
